@@ -1,0 +1,162 @@
+<h1>Autoplay test pages</h1>
+
+<h2>Intro</h2>
+<p>These test pages are for testing and verifying autoplay working in conjunction with various other attributes like muted and playsinline.
+There are two main sections: plain, and videojs.</p>
+<p>Plain means that this is just a regular video element without Video.js.
+videojs means that this is running with Video.js.</p>
+
+<h2>Plain</h2>
+<p>These are divided into a few ways of setting the attributes: HTML attribute, properties on the DOM object, setAttribute method, calling play with attributes.
+There probably should be another set of the various mixtures of things, like HTML attribute for muted with a setAttribute of autoplay but to keep the testing matrix less complicated, we will forgo such tests.</p>
+
+<h2>video.js</h2>
+<p>These are split into: HTML attributes, Video.js options, player methods.
+Again, we won't be looking into mixtures of these quite yet.</p>
+
+<table>
+  <caption>Simple embeds</caption>
+  <thead>
+    <tr>
+      <th>Plain</th>
+      <th>Video.js</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="./plain/simple.html">Simple</a></td>
+      <td><a href="./videojs/simple.html">Simple</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table>
+  <caption>HTML attributes</caption>
+  <thead>
+    <tr>
+      <th>Plain</th>
+      <th>Video.js</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="./plain/attr/autoplay.html">Autoplay</a></td>
+      <td><a href="./videojs/attr/autoplay.html">Autoplay</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/attr/muted.html">Muted</a></td>
+      <td><a href="./videojs/attr/muted.html">Muted</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/attr/playsinline.html">Playsinline</a></td>
+      <td><a href="./videojs/attr/playsinline.html">Playsinline</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/attr/muted-playsinline.html">Muted, Playsinline</a></td>
+      <td><a href="./videojs/attr/muted-playsinline.html">Muted, Playsinline</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/attr/autoplay-muted.html">Autoplay, Muted</a></td>
+      <td><a href="./videojs/attr/autoplay-muted.html">Autoplay, Muted</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/attr/autoplay-playsinline.html">Autoplay, Playsinline</a></td>
+      <td><a href="./videojs/attr/autoplay-playsinline.html">Autoplay, Playsinline</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/attr/autoplay-muted-playsinline.html">Autoplay, Muted, Playsinline</a></td>
+      <td><a href="./videojs/attr/autoplay-muted-playsinline.html">Autoplay, Muted, Playsinline</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table>
+  <caption>Plain video with</caption>
+  <thead>
+    <tr>
+      <th>Properties</th>
+      <th>setAttribute</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="./plain/properties/autoplay.html">Autoplay</a></td>
+      <td><a href="./plain/set-attr/autoplay.html">Autoplay</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/properties/muted.html">Muted</a></td>
+      <td><a href="./plain/set-attr/muted.html">Muted</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/properties/playsinline.html">Playsinline</a></td>
+      <td><a href="./plain/set-attr/playsinline.html">Playsinline</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/properties/muted-playsinline.html">Muted, Playsinline</a></td>
+      <td><a href="./plain/set-attr/muted-playsinline.html">Muted, Playsinline</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/properties/autoplay-muted.html">Autoplay, Muted</a></td>
+      <td><a href="./plain/set-attr/autoplay-muted.html">Autoplay, Muted</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/properties/autoplay-playsinline.html">Autoplay, Playsinline</a></td>
+      <td><a href="./plain/set-attr/autoplay-playsinline.html">Autoplay, Playsinline</a></td>
+    </tr>
+    <tr>
+      <td><a href="./plain/properties/autoplay-muted-playsinline.html">Autoplay, Muted, Playsinline</a></td>
+      <td><a href="./plain/set-attr/autoplay-muted-playsinline.html">Autoplay, Muted, Playsinline</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table>
+  <caption>Video.js with</caption>
+  <thead>
+    <tr>
+      <th>Options</th>
+      <th>method calls</th>
+      <th>Attributes with calls to play</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="./videojs/options/autoplay.html">Autoplay</a></td>
+      <td><a href="./videojs/methods/autoplay.html">Autoplay</a></td>
+      <td><a href="./videojs/play/autoplay.html">Autoplay</a></td>
+    </tr>
+    <tr>
+      <td><a href="./videojs/options/muted.html">Muted</a></td>
+      <td><a href="./videojs/methods/muted.html">Muted</a></td>
+    </tr>
+    <tr>
+      <td><a href="./videojs/options/playsinline.html">Playsinline</a></td>
+      <td><a href="./videojs/methods/playsinline.html">Playsinline</a></td>
+    </tr>
+    <tr>
+      <td><a href="./videojs/options/muted-playsinline.html">Muted, Playsinline</a></td>
+      <td><a href="./videojs/methods/muted-playsinline.html">Muted, Playsinline</a></td>
+    </tr>
+    <tr>
+      <td><a href="./videojs/options/autoplay-muted.html">Autoplay, Muted</a></td>
+      <td><a href="./videojs/methods/autoplay-muted.html">Autoplay, Muted</a></td>
+      <td><a href="./videojs/play/autoplay-muted.html">Autoplay, Muted</a></td>
+    </tr>
+    <tr>
+      <td><a href="./videojs/options/autoplay-playsinline.html">Autoplay, Playsinline</a></td>
+      <td><a href="./videojs/methods/autoplay-playsinline.html">Autoplay, Playsinline</a></td>
+      <td><a href="./videojs/play/autoplay-playsinline.html">Autoplay, Playsinline</a></td>
+    </tr>
+    <tr>
+      <td><a href="./videojs/options/autoplay-muted-playsinline.html">Autoplay, Muted, Playsinline</a></td>
+      <td><a href="./videojs/methods/autoplay-muted-playsinline.html">Autoplay, Muted, Playsinline</a></td>
+      <td><a href="./videojs/play/autoplay-muted-playsinline.html">Autoplay, Muted, Playsinline</a></td>
+    </tr>
+  </tbody>
+</table>
